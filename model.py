@@ -4,7 +4,7 @@ from keras.preprocessing.image import ImageDataGenerator
 train_datagen = ImageDataGenerator(rescale=1./255,shear_range=0.2,zoom_range=0.2,horizontal_flip=True)
 test_datagen = ImageDataGenerator(rescale=1./255)
 training_set = train_datagen.flow_from_directory('data/train',target_size=(64, 64),batch_size=5,color_mode='grayscale',class_mode='categorical')
-test_set = test_datagen.flow_from_directory('data/test',target_size=(64, color_mode='grayscale',class_mode='categorical') 
+test_set = test_datagen.flow_from_directory('data/test',target_size=(64,64), color_mode='grayscale',class_mode='categorical') 
 from keras.models import Sequential
 from keras.layers import Convolution2D
 from keras.layers import MaxPooling2D
