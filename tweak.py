@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-file=open('model.py','r')
+file=open('/root/Desktop/py_files/model.py','r')
 list=file.readlines()
 list
 var1=list[19]
