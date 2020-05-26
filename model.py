@@ -21,7 +21,7 @@ x=1
 history=classifier.fit_generator(training_set,steps_per_epoch=600,epochs=x,validation_data=test_set,validation_steps=30)
 acc=history.history['val_accuracy'][0]
 acc=(int(round(acc,2) * 100))                                       
-file=open("acc.txt","w")
+file=open("/root/py_files/acc.txt","w")
 pp=str(acc)
 file.write(pp)
 file.close()
